@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="io.vaibshukla.hibernateDemo.basic.entity">
+
+    <class name="User" table="users">
+        <id name="id" column="ic">
+           <generator class="increment"></generator>
+        </id>
+        <property name="firstName" type="java.lang.String" column="first_name" />
+        <property name="lastName" type="java.lang.String" column="last_name" />
+    </class>
+</hibernate-mapping>
