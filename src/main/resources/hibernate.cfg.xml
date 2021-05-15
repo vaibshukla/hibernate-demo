@@ -26,6 +26,6 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">create</property>
 
-        <mapping resource="User.hbm.xml"></mapping>
+        <mapping class="io.vaibshukla.hibernateDemo.basic.entity.User"></mapping>
     </session-factory>
 </hibernate-configuration>

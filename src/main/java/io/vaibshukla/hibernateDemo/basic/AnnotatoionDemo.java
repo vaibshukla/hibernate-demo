@@ -8,7 +8,7 @@ import org.hibernate.Session;
 import java.util.List;
 
 @Slf4j
-public class BasicDemoApp {
+public class AnnotatoionDemo {
 
     public static void main(String[] args) {
 
@@ -26,6 +26,7 @@ public class BasicDemoApp {
         session.getTransaction().commit();
         session.close();
 
+        HibernateUtil.close();
         log.info(" Users : {} " , users);
 
 
